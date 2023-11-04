@@ -5,6 +5,7 @@ import All from "./pages/All";
 import Search from "./pages/Search";
 import PageNotFound from "./pages/PageNotFound";
 import Home from "./pages/Home";
+import PokemonShower from "./pages/PokemonShower";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/all" element={<All />} />
-            <Route path="/search" element={<Search />} />
+            <Route path="/search/" element={<Search />} />
+            <Route path="/search/:pokemonName" element={<PokemonShower />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </BrowserRouter>
