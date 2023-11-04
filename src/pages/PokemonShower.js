@@ -18,7 +18,7 @@ function PokemonShower() {
   return (
     <div>
       <div className="pokemon-container">
-        {pokemon && ( //if(pokemon){ <Pokemon name={pokemon.name} url={`https://pokeapi.co/api/v2/pokemon/${search}`} img={pokemon.sprites.other.home.front_default}  />}
+        {pokemon && ( //if(pokemon){ <Pokemon name={pokemon.name} url={`https://pokeapi.co/api/v2/pokemon/${search}`} img={pokemon.sprites.other.home.front_default} />}
           <Pokemon
             name={pokemon.name}
             url={`https://pokeapi.co/api/v2/pokemon/${pokemonName}`}
